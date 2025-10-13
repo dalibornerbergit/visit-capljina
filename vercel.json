@@ -1,38 +1,4 @@
 {
-  "rewrites": [
-    { "source": "/", "destination": "/index.html" },
-    { "source": "/about", "destination": "/about.html" },
-    { "source": "/blog", "destination": "/blog.html" },
-    { "source": "/blog-single", "destination": "/blog-single.html" },
-    { "source": "/contact", "destination": "/contact.html" },
-    { "source": "/facility", "destination": "/facility.html" },
-    { "source": "/faq", "destination": "/faq.html" },
-    { "source": "/gallery", "destination": "/gallery.html" },
-    { "source": "/login", "destination": "/login.html" },
-    { "source": "/pricing", "destination": "/pricing.html" },
-    { "source": "/recipes", "destination": "/recipes.html" },
-    { "source": "/register", "destination": "/register.html" },
-    { "source": "/team", "destination": "/team.html" },
-    { "source": "/terms", "destination": "/terms.html" },
-    { "source": "/privacy", "destination": "/privacy.html" },
-    { "source": "/404", "destination": "/404.html" },
-    { "source": "/coming-soon", "destination": "/coming-soon.html" },
-    { "source": "/forgot-password", "destination": "/forgot-password.html" },
-    { "source": "/index-2", "destination": "/index-2.html" },
-    { "source": "/index-3", "destination": "/index-3.html" },
-    { "source": "/news", "destination": "/news.html" },
-    { "source": "/restaurants", "destination": "/restaurants.html" },
-    { "source": "/locations", "destination": "/locations.html" }
-  ],
-  "headers": [
-    {
-      "source": "/assets/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable"
-        }
-      ]
-    }
-  ]
+  "cleanUrls": true,
+  "trailingSlash": false
 }
