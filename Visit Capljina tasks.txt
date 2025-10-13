@@ -1,0 +1,19 @@
+Stranice: 
+	Statičke: Home, contact, about, 404
+	Dinamičke: Blog, Recipes, Locations, Restourants
+
+Recipe model:
+Title
+Short Description
+Body (full recipe instructions)
+Thumbnail (main image)
+Gallery (additional images)
+Date Created
+Keywords (tags for search/filter)
+Preparation Time
+Cooking Time
+Servings (number of people)
+Author (who submitted the recipe)
+Difficulty Level (easy, medium, hard)
+Cuisine Type (e.g., Bosnian, Mediterranean)
+Nutrition Info (calories, etc.)

@@ -62,7 +62,7 @@
                     class="nav-link dropdown-toggle active"
                     href="#"
                     data-bs-toggle="dropdown"
-                    >Home</a
+                    >Početna</a
                   >
                   <ul class="dropdown-menu fade-up">
                     <li>
@@ -83,19 +83,20 @@
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="facility.html">Facility</a>
+                  <a class="nav-link" href="about.html">O nama</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a
                     class="nav-link dropdown-toggle"
                     href="#"
                     data-bs-toggle="dropdown"
-                    >Pages</a
                   >
+                    Pages
+                  </a>
                   <ul class="dropdown-menu fade-up">
+                    <li>
+                      <a class="dropdown-item" href="facility.html">Facility</a>
+                    </li>
                     <li>
                       <a class="dropdown-item" href="about.html">About Us</a>
                     </li>
@@ -145,7 +146,7 @@
                     class="nav-link dropdown-toggle"
                     href="#"
                     data-bs-toggle="dropdown"
-                    >Blog</a
+                    >Novosti</a
                   >
                   <ul class="dropdown-menu fade-up">
                     <li><a class="dropdown-item" href="blog.html">Blog</a></li>
@@ -156,8 +157,36 @@
                     </li>
                   </ul>
                 </li>
+
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    data-bs-toggle="dropdown"
+                    >Dinamičke</a
+                  >
+                  <ul class="dropdown-menu fade-up">
+                    <li>
+                      <a class="dropdown-item" href="recipes.html">Recepti</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="news.html">Novosti</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="restaurants.html">
+                        Restorani
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="locations.html">
+                        Lokacije
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+
                 <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact</a>
+                  <a class="nav-link" href="contact.html">Kontakt</a>
                 </li>
               </ul>
               <div class="header-nav-right">
@@ -1091,7 +1120,10 @@
                 <div class="choose-content-wrapper">
                   <div class="choose-item">
                     <div class="choose-item-icon">
-                      <img src="/assets/img/icon/experienced-staff.svg" alt="" />
+                      <img
+                        src="/assets/img/icon/experienced-staff.svg"
+                        alt=""
+                      />
                     </div>
                     <div class="choose-item-info">
                       <h3>Experienced Staff</h3>
@@ -1701,20 +1733,15 @@
     <script src="/assets/js/main.js"></script>
 
     <script type="module">
-      const bloguUrl = `https://cdn.contentful.com/spaces/${import.meta.env.VITE_CONTENTFUL_API_KEY}/environments/master/entries?content_type=blogPage`;
-      const recipeUrl = `https://cdn.contentful.com/spaces/${import.meta.env.VITE_CONTENTFUL_API_KEY}/environments/master/entries?content_type=recipePage`;
+      const bloguUrl = `https://cdn.contentful.com/spaces/${
+        import.meta.env.VITE_CONTENTFUL_API_KEY
+      }/environments/master/entries?content_type=blogPage`;
 
       fetch(bloguUrl, {
         headers: {
-          Authorization: `Bearer ${import.meta.env.VITE_CONTENTFUL_BEARER_TOKEN}`,
-        },
-      })
-        .then((res) => res.json())
-        .then((data) => console.log(data));
-
-      fetch(recipeUrl, {
-        headers: {
-          Authorization: `Bearer ${import.meta.env.VITE_CONTENTFUL_BEARER_TOKEN}`,
+          Authorization: `Bearer ${
+            import.meta.env.VITE_CONTENTFUL_BEARER_TOKEN
+          }`,
         },
       })
         .then((res) => res.json())
